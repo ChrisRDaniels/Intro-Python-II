@@ -56,11 +56,11 @@ print(player.name, player.current_room)
 move_commands = ["n", "N", "e", "E", "s", "S", "w", "W"]
 
 while True:
-    cmd = input(" Enter the Direction you wish to travel. Press q at anytime to end your adventure. ")
+    cmd = input(" Enter the Direction you wish to travel,you may also press q at anytime to end your adventure. ")
     if cmd in move_commands:
         player.move(cmd)
-    elif cmd in ["q", "Q"]:
+    elif cmd.lower() in ["q"]:
         print("You've failed me for the last time!")
         break
     else:
-        print("I did not understand that command\n")
+        print("I don't know what you want...")

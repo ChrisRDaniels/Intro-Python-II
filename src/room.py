@@ -18,14 +18,14 @@ class Room:
         return returnString
 
     def get_direction(self, direction):
-        if direction in ["n", "N"]:
+        if direction.lower() in ["n"]:
             return self.n_to
-        elif direction in ["e", "E"]:
-            return self.s_to
-        elif direction in ["s", "S"]:
-            return self.w_to
-        elif direction in ["w", "W"]:
+        elif direction.lower() in ["e"]:
             return self.e_to
+        elif direction.lower() in ["s"]:
+            return self.s_to
+        elif direction.lower() in ["w"]:
+            return self.w_to
         else:
             return None
 
