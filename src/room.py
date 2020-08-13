@@ -13,7 +13,7 @@ class Room:
         self.item = []
 
     def __repr__(self):
-        returnString = f"***\n\n{self.name}\n\n  {self.description}\n\n***"
+        returnString = f"*********\n\n{self.name}\n\n  {self.description}\n\n***************"
         returnString += f"\n\n[{self.get_exit()}]\n\n"
         return returnString
 
